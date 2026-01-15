@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Delight Family Restaurant – QR Menu</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --card-dark: #1e1e1e;
+      --accent: #d4a373;
+      --text-light: #ffffff;
+      --text-muted: #bdbdbd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url('images/cover.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .hero-content p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    /* ================= SECTIONS ================= */
+    section {
+      padding: 32px 16px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .menu-card {
+      background: var(--card-dark);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .menu-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      object-fit: cover;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dashed rgba(255,255,255,0.08);
+      font-size: 0.95rem;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .price {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ================= INFO SECTION ================= */
+    .info {
+      background: #181818;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 0.9rem;
+    }
+
+    .info p {
+      margin-bottom: 8px;
+      color: var(--text-muted);
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      text-align: center;
+      padding: 20px 10px 40px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ================= DESKTOP ================= */
+    @media (min-width: 768px) {
+      .hero-content h1 {
+        font-size: 3rem;
+      }
+
+      section {
+        max-width: 900px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Delight Family Restaurant</h1>
+      <p>Family Dining • Veg & Non-Veg</p>
+    </div>
+  </section>
+
+  
+
+  
+
+  <!-- INDIAN VEG -->
+  <section>
+    <h2 class="section-title">Indian Veg</h2>
+    <div class="menu-card">
+      <img src="images/indian-veg.jpg" alt="Indian Veg">
+      <div class="menu-item"><span>Baigan Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Bhindi Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Aloo Jeera</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Tomato Chatni</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Gobi Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Gobi Mutter Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Aloo Mutter Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Aloo Gobi Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Mix Veg</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg Kolhapuri</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg Hyderabadi</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Chole Masala</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Baigan Bharta</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Kaju Masala</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Mushroom Masala</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Sev Bhaji</span><span class="price">₹179</span></div>
+    </div>
+  </section>
+
+  <!-- PANEER -->
+  <section>
+    <h2 class="section-title">Paneer</h2>
+    <div class="menu-card">
+      <img src="images/paneer.jpg" alt="Paneer">
+      <div class="menu-item"><span>Paneer Masala</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Paneer Butter Masala</span><span class="price">₹219</span></div>
+      <div class="menu-item"><span>Kadhai Paneer</span><span class="price">₹219</span></div>
+      <div class="menu-item"><span>Paneer Kolhapuri</span><span class="price">₹219</span></div>
+      <div class="menu-item"><span>Paneer Bhurji</span><span class="price">₹219</span></div>
+      <div class="menu-item"><span>Paneer Lacchedar</span><span class="price">₹219</span></div>
+      <div class="menu-item"><span>Kaju Paneer Masala</span><span class="price">₹219</span></div>
+    </div>
+  </section>
+
+ 
+
+  <!-- NON VEG MAIN COURSE -->
+  <section>
+    <h2 class="section-title">Non Veg Main Course</h2>
+    <div class="menu-card">
+      <img src="images/chicken.jpg" alt="Non Veg Main">
+      <div class="menu-item"><span>Egg Curry</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Chicken Curry</span><span class="price">₹299</span></div>
+      <div class="menu-item"><span>Chicken Lapeta</span><span class="price">₹319</span></div>
+      <div class="menu-item"><span>Mutton Curry</span><span class="price">₹299</span></div>
+      <div class="menu-item"><span>Mutton Lapeta</span><span class="price">₹319</span></div>
+      <div class="menu-item"><span>Keema Kaleji (On Order)</span><span class="price">₹379</span></div>
+    </div>
+  </section>
+
+   <!-- DAL -->
+  <section>
+    <h2 class="section-title">Dal</h2>
+    <div class="menu-card">
+      <img src="images/dal.jpg" alt="Dal">
+      <div class="menu-item"><span>Plain Dal</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Jeera Dal</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Dal Fry</span><span class="price">₹139</span></div>
+      <div class="menu-item"><span>Dal Tadka</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Dal Snake</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Dal Khichdi</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Dal Khichdi Tadka</span><span class="price">₹199</span></div>
+    </div>
+  </section>
+
+  <!-- RICE / PULAO / BIRYANI -->
+  <section>
+    <h2 class="section-title">Rice / Pulao / Biryani</h2>
+    <div class="menu-card">
+      <img src="images/biryani.jpg" alt="Rice">
+      <div class="menu-item"><span>Steam Rice</span><span class="price">₹79</span></div>
+      <div class="menu-item"><span>Jeera Rice</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Garlic Rice</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Lemon Rice</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Onion Rice</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Green Chilly Rice</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Masala Rice</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg Pulao</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Paneer Pulao</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Mushroom Pulao</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Veg Biryani</span><span class="price">₹219</span></div>
+    </div>
+  </section>
+
+  <!-- ROTI / PARATHA -->
+  <section>
+    <h2 class="section-title">Roti / Paratha</h2>
+    <div class="menu-card">
+      <img src="images/roti.jpg" alt="Roti">
+      <div class="menu-item"><span>Tawa Roti</span><span class="price">₹12</span></div>
+      <div class="menu-item"><span>Butter Roti</span><span class="price">₹19</span></div>
+      <div class="menu-item"><span>Aloo Paratha</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Gobi Paratha</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Methi Paratha</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Paneer Paratha</span><span class="price">₹149</span></div>
+    </div>
+  </section>
+
+  <!-- THALI -->
+  <section>
+    <h2 class="section-title">Thali</h2>
+    <div class="menu-card">
+      <img src="images/thali.jpg" alt="Thali">
+      <div class="menu-item"><span>Plain Thali</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Special Thali</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Delight Thali</span><span class="price">₹219</span></div>
+    </div>
+  </section>
+
+  <!-- SOUP -->
+  <section>
+    <h2 class="section-title">Soup</h2>
+    <div class="menu-card">
+      <img src="images/soup.jpg" alt="Soup">
+      <div class="menu-item"><span>Tomato Soup</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Manchow Soup</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Hot & Sour Soup</span><span class="price">₹129</span></div>
+    </div>
+  </section>
+
+  
+
+  <!-- CHINESE -->
+  <section>
+    <h2 class="section-title">Chinese (Veg)</h2>
+    <div class="menu-card">
+      <img src="images/chinese.jpg" alt="Chinese">
+      <div class="menu-item"><span>Veg Manchurian</span><span class="price">₹139</span></div>
+      <div class="menu-item"><span>Veg Noodles</span><span class="price">₹139</span></div>
+      <div class="menu-item"><span>Hakka Noodles</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Shezwan Noodles</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Manchurian Noodles</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg Fried Rice</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Shezwan Fried Rice</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Manchurian Fried Rice</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg Crispy</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Veg 65</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Mushroom Chilli</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Paneer Chilli</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Paneer Manchurian</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Chana Chilli</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Corn Crispy</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Paneer Fried Rice</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Paneer Noodles</span><span class="price">₹199</span></div>
+    </div>
+  </section>
+
+  <!-- NON VEG CHINESE -->
+  <section>
+    <h2 class="section-title">Non Veg Chinese</h2>
+    <div class="menu-card">
+      <img src="images/nonveg-chinese.jpg" alt="Non Veg Chinese">
+      <div class="menu-item"><span>Egg Fried Rice</span><span class="price">₹159</span></div>
+      <div class="menu-item"><span>Chilly Chicken</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Chicken Fried Rice</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Chicken Noodles</span><span class="price">₹199</span></div>
+    </div>
+  </section>
+
+<!-- BHEL -->
+  <section>
+    <h2 class="section-title">Bhel</h2>
+    <div class="menu-card">
+      <img src="images/bhel.jpg" alt="Bhel">
+      <div class="menu-item"><span>Corn Bhel</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Aloo Tikki Bhel</span><span class="price">₹119</span></div>
+    </div>
+  </section>
+
+  <!-- EGG -->
+  <section>
+    <h2 class="section-title">Egg</h2>
+    <div class="menu-card">
+      <img src="images/egg.jpg" alt="Egg">
+      <div class="menu-item"><span>Boiled Egg</span><span class="price">₹49</span></div>
+      <div class="menu-item"><span>Egg Fry</span><span class="price">₹59</span></div>
+      <div class="menu-item"><span>Egg Bhurji</span><span class="price">₹79</span></div>
+      <div class="menu-item"><span>Egg Omelette</span><span class="price">₹79</span></div>
+      <div class="menu-item"><span>Bread Omelette</span><span class="price">₹99</span></div>
+    </div>
+  </section>
+  
+  <!-- SANDWICH -->
+  <section>
+    <h2 class="section-title">Sandwich</h2>
+    <div class="menu-card">
+      <img src="images/sandwich.jpg" alt="Sandwich">
+      <div class="menu-item"><span>Veg Sandwich</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Veg Grilled Sandwich</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Veg Cheese Sandwich</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Veg Cheese Grill Sandwich</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Cheese Grill Sandwich</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Corn Cheese Grill Sandwich</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Mix Grill Sandwich</span><span class="price">₹129</span></div>
+    </div>
+  </section>
+
+  <!-- MAGGI -->
+  <section>
+    <h2 class="section-title">Maggi</h2>
+    <div class="menu-card">
+      <img src="images/maggi.jpg" alt="Maggi">
+      <div class="menu-item"><span>Masala Maggi</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Veg Maggi</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Corn Maggi</span><span class="price">₹129</span></div>
+      <div class="menu-item"><span>Cheese Maggi</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Tadka Maggi</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Cheese Corn Maggi</span><span class="price">₹159</span></div>
+    </div>
+  </section>
+
+  <!-- PIZZA -->
+  <section>
+    <h2 class="section-title">Pizza</h2>
+    <div class="menu-card">
+      <img src="images/pizza.jpg" alt="Pizza">
+      <div class="menu-item"><span>Veg Pizza</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Cheese Pizza</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Capsicum Pizza</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Corn Pizza</span><span class="price">₹149</span></div>
+      <div class="menu-item"><span>Paneer Chilli Pizza</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Mushroom Pizza</span><span class="price">₹199</span></div>
+      <div class="menu-item"><span>Special Pizza</span><span class="price">₹219</span></div>
+    </div>
+  </section>
+
+  <!-- ROLL -->
+  <section>
+    <h2 class="section-title">Roll</h2>
+    <div class="menu-card">
+      <img src="images/roll.jpg" alt="Roll">
+      <div class="menu-item"><span>Veg Roll</span><span class="price">₹139</span></div>
+      <div class="menu-item"><span>Paneer Roll</span><span class="price">₹179</span></div>
+    </div>
+  </section>
+
+  <!-- NON VEG ROLL -->
+  <section>
+    <h2 class="section-title">Non Veg Roll</h2>
+    <div class="menu-card">
+      <img src="images/nonveg-roll.jpg" alt="Non Veg Roll">
+      <div class="menu-item"><span>Egg Roll</span><span class="price">₹139</span></div>
+      <div class="menu-item"><span>Chicken Roll</span><span class="price">₹179</span></div>
+      <div class="menu-item"><span>Egg Chicken Roll</span><span class="price">₹199</span></div>
+    </div>
+  </section>
+
+  <!-- RAITA -->
+  <section>
+    <h2 class="section-title">Raita</h2>
+    <div class="menu-card">
+      <img src="images/raita.jpg" alt="Raita">
+      <div class="menu-item"><span>Plain Curd</span><span class="price">₹29</span></div>
+      <div class="menu-item"><span>Veg Raita</span><span class="price">₹59</span></div>
+      <div class="menu-item"><span>Boondi Raita</span><span class="price">₹59</span></div>
+    </div>
+  </section>
+
+  <!-- SALAD -->
+  <section>
+    <h2 class="section-title">Salad</h2>
+    <div class="menu-card">
+      <img src="images/salad.jpg" alt="Salad">
+      <div class="menu-item"><span>Green Salad</span><span class="price">₹59</span></div>
+      <div class="menu-item"><span>Kachumber Salad</span><span class="price">₹59</span></div>
+      <div class="menu-item"><span>Garlic Fry</span><span class="price">₹99</span></div>
+    </div>
+  </section>
+
+  <!-- PAPAD -->
+  <section>
+    <h2 class="section-title">Papad</h2>
+    <div class="menu-card">
+      <img src="images/papad.jpg" alt="Papad">
+      <div class="menu-item"><span>Roasted Papad</span><span class="price">₹19</span></div>
+      <div class="menu-item"><span>Fry Papad</span><span class="price">₹29</span></div>
+      <div class="menu-item"><span>Masala Papad</span><span class="price">₹39</span></div>
+    </div>
+  </section>
+
+  <!-- SHAKES -->
+  <section>
+    <h2 class="section-title">Shakes</h2>
+    <div class="menu-card">
+      <img src="images/shake.jpg" alt="Shake">
+      <div class="menu-item"><span>Oreo Shake</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Kaju Shake</span><span class="price">₹119</span></div>
+      <div class="menu-item"><span>Mango Shake</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Strawberry Shake</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Butterscotch Shake</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Pineapple Shake</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Chocolate Shake</span><span class="price">₹99</span></div>
+    </div>
+  </section>
+
+  <!-- BEVERAGES -->
+  <section>
+    <h2 class="section-title">Beverages</h2>
+    <div class="menu-card">
+      <img src="images/beverages.jpg" alt="Beverages">
+      <div class="menu-item"><span>Mineral Water 1L</span><span class="price">₹22</span></div>
+      <div class="menu-item"><span>Mineral Water 500ml</span><span class="price">₹12</span></div>
+      <div class="menu-item"><span>Hot Coffee</span><span class="price">₹49</span></div>
+      <div class="menu-item"><span>Cold Drink 200ml</span><span class="price">₹25</span></div>
+      <div class="menu-item"><span>Cold Coffee</span><span class="price">₹99</span></div>
+      <div class="menu-item"><span>Lassi</span><span class="price">₹79</span></div>
+      <div class="menu-item"><span>Butter Milk</span><span class="price">₹49</span></div>
+    </div>
+  </section>
+
+  <!-- NON VEG MAKING -->
+  <section>
+    <h2 class="section-title">Non Veg Making (Per Kg)</h2>
+    <div class="menu-card">
+      <img src="images/nonveg-making.jpg" alt="Non Veg Making">
+      <div class="menu-item"><span>Fish (Per Kg)</span><span class="price">₹249</span></div>
+      <div class="menu-item"><span>Chicken (Per Kg)</span><span class="price">₹349</span></div>
+      <div class="menu-item"><span>Mutton (Per Kg)</span><span class="price">₹349</span></div>
+    </div>
+  </section>
+
+  <!-- GENERAL INFO -->
+  <section>
+    <h2 class="section-title">General Information</h2>
+    <div class="info">
+      <p>🍱 Mess / Monthly Meal Plan: ₹3500 per month</p>
+      <p>⏱️ Preparation Time: 21–25 minutes</p>
+      <p>📦 Parcel Charges: Extra</p>
+      <p>💳 Parcel Orders: Advance payment required</p>
+    </div>
+  </section>
+
+  <footer>
+    © The Delight Family Restaurant
+  </footer>
+
+</body>
+</html>
